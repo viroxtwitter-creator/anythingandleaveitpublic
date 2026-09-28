@@ -1,0 +1,38 @@
+# Generated applications, dependencies, models, and local tooling
+.app*/
+.build*/
+.*-deps/
+.model-cache/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.spec
+.pytest_cache/
+.agents/
+.codex/
+
+# Private recordings, project files, analysis, and generated edits
+analysis/
+exports/
+*.drp
+*.drt
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.m4a
+*.csv
+*.lnk
+semantic-preferences.json
+
+# Credentials and machine-local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log
+Thumbs.db
+Desktop.ini

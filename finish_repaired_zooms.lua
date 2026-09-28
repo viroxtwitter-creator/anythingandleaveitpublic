@@ -1,0 +1,8 @@
+local resolve=bmd.scriptapp('Resolve')
+local project=assert(resolve:GetProjectManager():GetCurrentProject())
+local timeline=assert(project:GetCurrentTimeline())
+assert(timeline:GetName()=='REPAIRED - Fortnite - Fusion zooms')
+assert(timeline:SetCurrentTimecode('01:01:31:35'))
+assert(timeline:Export('C:/Users/jordan/Desktop/Edit/exports/Repaired Fortnite Fusion zooms.drt',resolve.EXPORT_DRT))
+assert(resolve:GetProjectManager():SaveProject())
+print('REPAIRED_ZOOMS_SAVED')
